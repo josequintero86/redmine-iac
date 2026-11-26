@@ -4,5 +4,3 @@
 *.tfplan
 tfplan
 crash.log
-*.auto.tfvars
-secrets.tfvars
