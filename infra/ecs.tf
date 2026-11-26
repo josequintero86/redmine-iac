@@ -20,7 +20,7 @@ resource "aws_iam_role" "execution" {
 }
 resource "aws_iam_role_policy_attachment" "execution_base" {
   role       = aws_iam_role.execution.name
-  policy_arn = "arn:aws:iam::aws:policy/servicerole/AmazonECSTaskExecutionRolePolicy"
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
 }
 resource "aws_iam_role_policy" "execution_secrets" {
   name = "read-secrets"
