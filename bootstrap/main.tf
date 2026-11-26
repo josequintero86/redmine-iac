@@ -62,7 +62,10 @@ data "aws_iam_policy_document" "trust" {
     condition {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${var.github_repo}:*"]
+      values = [
+        "repo:${var.github_repo}:*",
+        "repo:josequintero86@166960951/redmine-iac@1470891082:*",
+      ]
     }
   }
 }
